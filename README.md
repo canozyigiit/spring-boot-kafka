@@ -13,9 +13,9 @@ Mesajlaşma sistemi (messaging system) olabilir, etkinlik takibi(activity tracki
 Big Data entegrasyonları için kullanılabilir. Gerçek zamanlı öneriler, kararlar ve bilgiler(insights) oluşturmak için kullanılabilir.
 
 ### Yapısı
-Producer : Topic için mesaj üretir
-Topic: Producer tarafından yayınlanan mesajları tutar (key,value,timesmap)
-Consume: Topicde ki mesajları okur
-Broker: Kafka kümesini oluşturan kafka sunucuları
-Partition: Sıralı,değişmez, sona eklemeli kayıtlar dizisidir.İçerisinde ki her kayıt bir 'offset' değerine sahiptir.
-Replica: Partition kopyası
+- Producer : Topic için mesaj üretir
+- Topic: Producer tarafından yayınlanan mesajları tutar (key,value,timesmap)
+- Consume: Topicde ki mesajları okur
+- Broker: Kafka kümesini oluşturan kafka sunucuları
+- Partition: Sıralı,değişmez, sona eklemeli kayıtlar dizisidir.İçerisinde ki her kayıt bir 'offset' değerine sahiptir.
+- Replica: Partition kopyası
