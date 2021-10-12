@@ -11,3 +11,11 @@ Dağıtık (distrubuted) bir veri akış (streaming) platformudur. Hataya dayan�
 Son derece yüksek performans ile bir sistemden diğer sisteme 10 ms’den az bir gecikme(latency) ile neredeyse gerçek zamanlı olarak veri transferini mümkün kılmaktadır.
 Mesajlaşma sistemi (messaging system) olabilir, etkinlik takibi(activity tracking) için, uygulama loglarını toplamak için, sağladığı API ile stream processing amacıyla kullanılabilir.
 Big Data entegrasyonları için kullanılabilir. Gerçek zamanlı öneriler, kararlar ve bilgiler(insights) oluşturmak için kullanılabilir.
+
+### Yapısı
+Producer : Topic için mesaj üretir
+Topic: Producer tarafından yayınlanan mesajları tutar (key,value,timesmap)
+Consume: Topicde ki mesajları okur
+Broker: Kafka kümesini oluşturan kafka sunucuları
+Partition: Sıralı,değişmez, sona eklemeli kayıtlar dizisidir.İçerisinde ki her kayıt bir 'offset' değerine sahiptir.
+Replica: Partition kopyası
